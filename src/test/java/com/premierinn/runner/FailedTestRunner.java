@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         plugin = {"html:target/failed-html-report"},
         features = "@target/rerun.txt",
 
-        glue="com/vytrack/step_definitions"
+        glue="com/premierinn/step_definitions"
 
 )
 public class FailedTestRunner {
