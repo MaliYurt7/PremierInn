@@ -71,6 +71,7 @@ public class BrowserUtils {
             dateToday[i]=dateSplit;
 
         }
+        System.out.println("dateToday = " + Arrays.toString(dateToday));
         return dateToday;
 
     }
@@ -79,13 +80,15 @@ public class BrowserUtils {
      * the right arrow clicking number calculation
      */
     public static int cancellationCal(int []dateExpected, int [] dateToday){
+        System.out.println("dateExpected = " + Arrays.toString(dateExpected));
+        System.out.println("dateToday = " + Arrays.toString(dateToday));
         int totalMonthClicking=0;
         if (dateExpected[2]-dateToday[2]>2){
             int yearMonths=(dateExpected[2]-dateToday[2]-1)*12;
             int monthInDateExpected=dateExpected[1];
             int monthInDateToday=12-dateToday[1];
             totalMonthClicking=yearMonths+monthInDateExpected+monthInDateToday;
-        }else if (dateExpected[2]-dateToday[2]>1){
+        }else if (dateExpected[2]-dateToday[2]==1){
             int monthInDateExpected=dateExpected[1];
             int monthInDateToday=12-dateToday[1];
             totalMonthClicking=monthInDateExpected+monthInDateToday;
@@ -93,6 +96,7 @@ public class BrowserUtils {
             int monthInDateToday=dateExpected[1]-dateToday[1];
             totalMonthClicking=monthInDateToday;
         }
+        System.out.println("totalMonthClicking = " + totalMonthClicking);
         return totalMonthClicking;
 
 

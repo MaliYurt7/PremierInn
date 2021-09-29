@@ -37,6 +37,7 @@ public class CancellationPageStepDef {
         manageBookingPage.arrivalDateInput.click();
         int numberOfclicking = BrowserUtils.cancellationCal(BrowserUtils.integerParsingDate(ArrivalDate), BrowserUtils.integerParsingDate());
         for (int i = 0; i < numberOfclicking; i++) {
+            BrowserUtils.waitFor(1);
             manageBookingPage.calendarArrowRight.click();
         }
         manageBookingPage.navigateToModule(BrowserUtils.integerParsingDate1(ArrivalDate));

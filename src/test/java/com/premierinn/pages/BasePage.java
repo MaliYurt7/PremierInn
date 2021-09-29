@@ -44,6 +44,7 @@ public abstract class BasePage {
     public WebElement calendarArrowRight;
 
     public void navigateToModule(String date) {
+        System.out.println("date = " + date);
         Driver.get().findElement(By.id("date-picker-day-"+ date)).click();
 
     }

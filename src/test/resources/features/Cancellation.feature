@@ -12,6 +12,6 @@
       Then  the customer should be able to see the "<FirstName>" "<LastName>" and capture the "cancellation number" storing to a "cancellationNumber.csv"
       Examples:
         | BookingReference | FirstName  | LastName | ArrivalDate |
-#        | AFTR761191       | Automation | Tester   | 10-Nov-21    |
-#        | AIWR151432       | Fred       | Mali     | 11-Nov-21   |
-        | BKAR13809        | Robot      | Machine  | 12-Nov-21   |
+#        | AEGR786787       | Automation | Tester   | 11-Jan-22   |
+#        | BKIR12833        | Automation | Tester   | 18-Jan-22   |
+        | AKIR515045       | Automation | Tester   | 26-Jan-22   |

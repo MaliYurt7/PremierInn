@@ -14,7 +14,7 @@ public class Hooks {
     @Before
     public void setUp(){
 
-        Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Driver.get().manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
     }
 
     @After
@@ -25,6 +25,6 @@ public class Hooks {
             scenario.embed(screenshot, "image/png", scenario.getName());
         }
 
-        Driver.closeDriver();
+       // Driver.closeDriver();
     }
 }
